@@ -6,7 +6,7 @@ from PIL import Image
 
 #model = load_model('BestModel_Alexnet_Keras.h5') 
 
-model='BestModel_Alexnet_Keras.h5'
+model= load_model('BestModel_Alexnet_Keras.h5')
 
 class_names = ['Hijau', 'Keriting', 'Rawit']
 
