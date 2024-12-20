@@ -4,7 +4,13 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from PIL import Image
 
-model = load_model('BestModel_Alexnet_Keras.h5') 
+#model = load_model('BestModel_Alexnet_Keras.h5') 
+
+model='BestModel_Alexnet_Keras.h5'
+
+with open(model, 'rb') as f:
+    loaded_model = pickle.load(f)
+
 class_names = ['Hijau', 'Keriting', 'Rawit']
 
 def classify_image(image_path):
