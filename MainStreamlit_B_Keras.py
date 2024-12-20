@@ -8,9 +8,6 @@ from PIL import Image
 
 model='BestModel_Alexnet_Keras.h5'
 
-with open(model, 'rb') as f:
-    loaded_model = pickle.load(f)
-
 class_names = ['Hijau', 'Keriting', 'Rawit']
 
 def classify_image(image_path):
